@@ -4,7 +4,7 @@ from datetime import datetime
 TW_API_KEY = 'YOUR API KEY' #Twitter által megadott API kulcs
 TW_API_SEC = 'YOUR API SECRET' #Twitter által megadott titkosított API
 TW_ACC_TOK = 'YOUR ACCESS TOKEN' #Twitter által megadott hozzáférési jegy
-TW_ACC_TOK_SEC = 'YOUR ACCESS TOKEN SECRET' #Twitter által megadotttitkosított hozzáférési jegy
+TW_ACC_TOK_SEC = 'YOUR ACCESS TOKEN SECRET' #Twitter által megadott titkosított hozzáférési jegy
 
 auth = tweepy.OAuthHandler(TW_API_KEY, TW_API_SEC)
 auth.set_access_token(TW_ACC_TOK, TW_ACC_TOK_SEC)
