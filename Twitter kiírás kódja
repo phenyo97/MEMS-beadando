@@ -10,7 +10,7 @@ auth = tweepy.OAuthHandler(TW_API_KEY, TW_API_SEC)
 auth.set_access_token(TW_ACC_TOK, TW_ACC_TOK_SEC)
 api = tweepy.API(auth)
 
-tempf = open("/sys/bus/w1/devices/28-00000XXXXXX/w1_slave")
+tempf = open("/sys/bus/w1/devices/00-800000000000/w1_slave")
 thetext = tempf.read()
 tempf.close()
 tempdta = thetext.split("\n")[1].split(" ")[9]
